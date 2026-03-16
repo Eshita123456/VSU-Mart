@@ -131,10 +131,11 @@ color:#fff;
                 <!-- Project 1 -->
                 <div class="col-md-4" style="flex:1;min-width:300px;">
                     <div>
-                        <img src="./images/2-13-e1684809296787-1024x816.jpg"
-                            style="width:100%;height:320px;object-fit:cover;border-radius:4px;">
+                        <img src="./images/ChatGPT Image Mar 16, 2026, 01_20_17 PM.png"
+                            style="width:100%;height:320px;object-fit:cover;border-radius:4px;cursor:pointer;"
+                            data-toggle="modal" data-target="#popupForm">
                         <h5 style="margin-top:15px;font-weight:700;color:#1c355e;letter-spacing:1px;">
-                            PIRAMAL VAIKUNTH
+                            MERUSRI SUNSCAPE
                         </h5>
                     </div>
                 </div>
@@ -142,10 +143,11 @@ color:#fff;
                 <!-- Project 2 -->
                 <div class="col-md-4" style="flex:1;min-width:300px;">
                     <div>
-                        <img src="./images/1652855808-1024x585.png"
-                            style="width:100%;height:320px;object-fit:cover;border-radius:4px;">
+                        <img src="./images/ChatGPT Image Mar 16, 2026, 01_22_23 PM.png"
+                            style="width:100%;height:320px;object-fit:cover;border-radius:4px;cursor:pointer;"
+                            data-toggle="modal" data-target="#popupForm">
                         <h5 style="margin-top:15px;font-weight:700;color:#1c355e;letter-spacing:1px;">
-                            GODREJ HORIZON
+                            Ekanam By Great value
                         </h5>
                     </div>
                 </div>
@@ -153,10 +155,11 @@ color:#fff;
                 <!-- Project 3 -->
                 <div class="col-md-4" style="flex:1;min-width:300px;">
                     <div>
-                        <img src="./images/image1676651245.jpg"
-                            style="width:100%;height:320px;object-fit:cover;border-radius:4px;">
+                        <img src="./images/ChatGPT Image Mar 16, 2026, 01_26_15 PM.png"
+                            style="width:100%;height:320px;object-fit:cover;border-radius:4px;cursor:pointer;"
+                            data-toggle="modal" data-target="#popupForm">
                         <h5 style="margin-top:15px;font-weight:700;color:#1c355e;letter-spacing:1px;">
-                            LODHA BELLEVUE
+                            Smartworld Residences By ELIE SAAB
                         </h5>
                     </div>
                 </div>
@@ -190,28 +193,31 @@ color:#fff;
 
                 <!-- Project 1 -->
                 <div style="flex:1;min-width:320px;">
-                    <img src="./images/dosti-imperia-phase-i-project-project-large-image1-1024x512.jpg"
-                        style="width:100%;height:320px;object-fit:cover;">
+                    <img src="./images/ChatGPT Image Mar 16, 2026, 01_30_41 PM.png"
+                        style="width:100%;height:320px;object-fit:cover;border-radius:4px;cursor:pointer;"
+                        data-toggle="modal" data-target="#popupForm">
                     <h5 style="margin-top:15px;font-weight:700;color:#0a2e57;letter-spacing:1px;">
-                        RUNWAL RUNWAL PEARL
+                        Aditya The Kutumb
                     </h5>
                 </div>
 
                 <!-- Project 2 -->
                 <div style="flex:1;min-width:320px;">
-                    <img src="./images/Project-Photo-7-Kalpataru-Bliss-Mumbai-5123635_345_1366_310_462.jpg"
-                        style="width:100%;height:320px;object-fit:cover;">
+                    <img src="./images/ChatGPT Image Mar 16, 2026, 01_34_34 PM.png"
+                        style="width:100%;height:320px;object-fit:cover;border-radius:4px;cursor:pointer;"
+                        data-toggle="modal" data-target="#popupForm">
                     <h5 style="margin-top:15px;font-weight:700;color:#0a2e57;letter-spacing:1px;">
-                        DOSTI IMPERIA
+                        M3M Elie saab
                     </h5>
                 </div>
 
                 <!-- Project 3 -->
                 <div style="flex:1;min-width:320px;">
-                    <img src="./images/banner1-e1684687113948-1024x812.jpg"
-                        style="width:100%;height:320px;object-fit:cover;">
+                    <img src="./images/ChatGPT Image Mar 16, 2026, 01_35_17 PM.png"
+                        style="width:100%;height:320px;object-fit:cover;border-radius:4px;cursor:pointer;"
+                        data-toggle="modal" data-target="#popupForm">
                     <h5 style="margin-top:15px;font-weight:700;color:#0a2e57;letter-spacing:1px;">
-                        KALPATARU VISTA
+                        Adani The Marq
                     </h5>
                 </div>
 
@@ -289,7 +295,7 @@ color:#fff;
         </p>
     </section>
 
-    <!-- Popup Form -->
+     <!-- Popup Form -->
     <div id="popupForm" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -298,7 +304,7 @@ color:#fff;
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                 <div style="text-align:center;margin-bottom:20px;">
-                    <img src="images/logos/logo.png" style="height:60px;">
+                    <img src="images/logos/logo.png" style="height: 70px;width:auto;">
                 </div>
 
                 <form>
@@ -335,14 +341,25 @@ color:#fff;
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
+
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/hoverdir.js"></script>
+
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-    <!-- MAP & CONTACT -->
+
+    <!-- MAP -->
     <script src="js/map.js"></script>
 
+    <!-- POPUP SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                $('#popupForm').modal('show');
+            }, 1500);
+        });
+    </script>
 </body>
 
 </html>

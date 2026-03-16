@@ -116,37 +116,37 @@ color:#fff;
             <!-- Image -->
             <div style="flex:1;min-width:400px;">
                 <img src="./images/Runwal.jpg"
-                    style="width:100%;height:auto;box-shadow:0 10px 25px rgba(0,0,0,0.15);">
+                    style="width:100%;height:auto;box-shadow:0 10px 25px rgba(0,0,0,0.2);border-radius:4px;cursor:pointer;"
+                    data-toggle="modal" data-target="#popupForm"></div>
+
+                <!-- Text -->
+                <div style="flex:1;min-width:400px;color:#333;font-size:16px;line-height:1.8;">
+
+                    <p>
+                        Welcome to <b>VSU MART</b>, your trusted partner in the real estate industry.
+                        We are a premier real estate company dedicated to helping individuals and businesses
+                        find their dream properties. Whether you are searching for a residential property,
+                        commercial space, or an investment opportunity, we are here to make your real estate
+                        journey seamless and rewarding.
+                    </p>
+
+                    <p>
+                        At VSU MART, we understand that buying or renting a property is not just a financial
+                        decision; it is an emotional and life-changing experience. With this understanding,
+                        we strive to provide exceptional services that cater to your unique needs and
+                        preferences. Our team of experienced professionals is committed to offering
+                        personalized attention, expert guidance, and reliable solutions, ensuring that
+                        you make well-informed decisions throughout the process.
+                    </p>
+
+                </div>
+
             </div>
-
-            <!-- Text -->
-            <div style="flex:1;min-width:400px;color:#333;font-size:16px;line-height:1.8;">
-
-                <p>
-                    Welcome to <b>VSU MART</b>, your trusted partner in the real estate industry.
-                    We are a premier real estate company dedicated to helping individuals and businesses
-                    find their dream properties. Whether you are searching for a residential property,
-                    commercial space, or an investment opportunity, we are here to make your real estate
-                    journey seamless and rewarding.
-                </p>
-
-                <p>
-                    At VSU MART, we understand that buying or renting a property is not just a financial
-                    decision; it is an emotional and life-changing experience. With this understanding,
-                    we strive to provide exceptional services that cater to your unique needs and
-                    preferences. Our team of experienced professionals is committed to offering
-                    personalized attention, expert guidance, and reliable solutions, ensuring that
-                    you make well-informed decisions throughout the process.
-                </p>
-
-            </div>
-
-        </div>
     </section>
 
     <hr class="hr1">
 
-     <footer style="background:#000;color:#fff;padding:60px 0 20px 0;">
+    <footer style="background:#000;color:#fff;padding:60px 0 20px 0;">
         <div style="max-width:1200px;margin:auto;display:flex;flex-wrap:wrap;gap:60px;justify-content:space-between;">
 
             <!-- Logo & About -->
@@ -176,9 +176,11 @@ color:#fff;
                     </ul>
 
                     <ul style="list-style:none;padding:0;">
-                        <li style="margin-bottom:10px;"><a href="./privacy.html" style="color:#ddd;text-decoration:none;">Privacy
+                        <li style="margin-bottom:10px;"><a href="./privacy.html"
+                                style="color:#ddd;text-decoration:none;">Privacy
                                 Policy</a></li>
-                        <li style="margin-bottom:10px;"><a href="./terms.html" style="color:#ddd;text-decoration:none;">Terms &
+                        <li style="margin-bottom:10px;"><a href="./terms.html"
+                                style="color:#ddd;text-decoration:none;">Terms &
                                 Condition</a></li>
                     </ul>
                 </div>
@@ -224,7 +226,7 @@ color:#fff;
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                 <div style="text-align:center;margin-bottom:20px;">
-                    <img src="images/logos/logo.png" style="height:60px;">
+                    <img src="images/logos/logo.png" style="height: 70px;width:auto;">
                 </div>
 
                 <form>
@@ -261,14 +263,25 @@ color:#fff;
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
+
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/hoverdir.js"></script>
+
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-    <!-- MAP & CONTACT -->
+
+    <!-- MAP -->
     <script src="js/map.js"></script>
 
+    <!-- POPUP SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                $('#popupForm').modal('show');
+            }, 1500);
+        });
+    </script>
 </body>
 
 </html>

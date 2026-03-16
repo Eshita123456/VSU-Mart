@@ -247,7 +247,7 @@ color:white;
         </p>
     </section>
 
-    <!-- Popup Form -->
+     <!-- Popup Form -->
     <div id="popupForm" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -256,7 +256,7 @@ color:white;
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
                 <div style="text-align:center;margin-bottom:20px;">
-                    <img src="images/logos/logo.png" style="height:60px;">
+                    <img src="images/logos/logo.png" style="height: 70px;width:auto;">
                 </div>
 
                 <form>
@@ -293,14 +293,25 @@ color:white;
 
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
+
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/hoverdir.js"></script>
+
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-    <!-- MAP & CONTACT -->
+
+    <!-- MAP -->
     <script src="js/map.js"></script>
 
+    <!-- POPUP SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                $('#popupForm').modal('show');
+            }, 1500);
+        });
+    </script>
 </body>
 
 </html>
